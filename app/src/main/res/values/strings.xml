@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">HappyHealth</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="diet_array">
+        <item>omnivore</item>
+        <item>vegetarian</item>
+        <item>vegan</item>
+    </string-array>
+
+    <string-array name="smoker_group_array">
+        <item>overall</item>
+        <item>male</item>
+        <item>female</item>
+    </string-array>
+
+    <string-array name="food_emissions_array">
+        <item>Total</item>
+        <item>Meat</item>
+        <item>Dairy</item>
+        <item>Plant</item>
+    </string-array>
+
+    <string-array name="transport_emissions_array">
+        <item>Total</item>
+        <item>Flight</item>
+        <item>Train</item>
+        <item>Bus</item>
+    </string-array>
+
+    <string name="Settings">Settings</string>
+    <string name="Edit_TextView">Edit TextView</string>
+    <string name="Change_title">Change title</string>
+    <string name="Title">Title</string>
+    <string name="Language">Language</string>
+    <string name="Translate_to">Translate to:</string>
+    <string name="Choose">Choose</string>
+    <string name="English">English</string>
+    <string name="Finnish">Finnish</string>
+    <string name="Text_field_options">Text field options</string>
+    <string name="Font_size">Font size</string>
+    <string name="Width">Width</string>
+    <string name="Height">Height</string>
+    <string name="Row_count">Row count</string>
+    <string name="Write_Field">Write Field</string>
+    <string name="Read_Field">Read Field</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>

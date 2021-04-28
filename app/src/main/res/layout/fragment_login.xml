@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@android:style/Widget.DeviceDefault.Light.ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad3"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/login_guest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/secondary_pink"
+                android:backgroundTintMode="src_over"
+                android:onClick="loginGuest"
+                android:text="GUEST LOGIN" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingHorizontal="40dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/login_page_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="30dp"
+                        android:paddingBottom="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="HappyHealth"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                        android:textColor="@color/primary_pink"
+                        android:textSize="38sp" />
+
+                    <EditText
+                        android:id="@+id/username_input"
+                        android:layout_width="220dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/border"
+                        android:ems="10"
+                        android:hint="Username"
+                        android:inputType="textPersonName"
+                        android:textColorHint="@color/primary_pink"
+                        android:layout_gravity="center"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false"
+                        app:passwordToggleEnabled="true"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/password_input"
+                            android:layout_width="220dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/border"
+                            android:ems="10"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:textColorHint="@color/primary_pink" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="1dp"
+                        android:paddingBottom="10dp"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/create_account"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="loadCreateAccountFragment"
+                            android:text="Create account" />
+
+                        <Button
+                            android:id="@+id/login_button"
+                            style="@style/Widget.AppCompat.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="loginUser"
+                            android:text="Login" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/login_page_logo"
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@mipmap/happy_health_logo_foreground"
+                        android:contentDescription="HappyHealthLogo" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
