@@ -1,24 +1,18 @@
 package com.example.harjoitustyo;
 
 import android.content.Context;
-import android.graphics.Bitmap;
 import android.util.Log;
-
-import androidx.annotation.NonNull;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.regex.Pattern;
 
 public class ProfileManager {
 
